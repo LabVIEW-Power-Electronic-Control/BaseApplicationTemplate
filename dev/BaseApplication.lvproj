@@ -2533,8 +2533,6 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Controller/Main.vi"/>
 		<Item Name="Host Module Includes.vi" Type="VI" URL="../Controller/Host Module Includes.vi"/>
-		<Item Name="FPGA_FGV.vi" Type="VI" URL="../Controller/FPGA_FGV.vi"/>
-		<Item Name="FPGA_FGV_action.ctl" Type="VI" URL="../Controller/FPGA_FGV_action.ctl"/>
 		<Item Name="methods.ctl" Type="VI" URL="../Controller/Support/methods.ctl"/>
 		<Item Name="FPGAtypedef.ctl" Type="VI" URL="../Controller/FPGA/FPGAtypedef.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -2568,12 +2566,9 @@ AddOutputFilter chunkFilter
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="ScaleAndLimitInterface.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/PowerElectronicsControl/ScaleAndLimit/Interface/ScaleAndLimitInterface.lvlib"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -2583,7 +2578,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
-				<Item Name="WaveformTask.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/PowerElectronicsControl/WaveformAcq/RT/WaveformTask.lvclass"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="TBM module execution interface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/runtime/TBM module execution interface.lvclass"/>
 				<Item Name="NISE_error generator.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Configuration Framework/error generator/NISE_error generator.vi"/>
@@ -2611,21 +2605,8 @@ AddOutputFilter chunkFilter
 				<Item Name="PL_Serialization Interface.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/Framework Configuration Classes/flattened data interface/PL_Serialization Interface.lvlib"/>
 				<Item Name="FPGA manager.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/FPGA manager/FPGA manager.lvlib"/>
 				<Item Name="Current Value Table.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Current Value Table/Current Value Table.lvlib"/>
-				<Item Name="Standard Engine Runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/Runtime/Standard Engine Runtime.lvclass"/>
-				<Item Name="worker pool.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/worker library/worker pool.lvlib"/>
-				<Item Name="main engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/main engine/main engine.lvlib"/>
-				<Item Name="Standard Engine Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/Configuration/Standard Engine Configuration.lvclass"/>
-				<Item Name="usec timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/usec timing source/usec timing source.lvclass"/>
-				<Item Name="scan engine timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/scan engine timing source/scan engine timing source.lvclass"/>
-				<Item Name="Set Scan Engine Period.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Set Scan Engine Period.vi"/>
-				<Item Name="IOV engine refnum from target address.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/IOV engine refnum from target address.vi"/>
-				<Item Name="Set Scan Engine Mode.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Set Scan Engine Mode.vi"/>
-				<Item Name="Synchronize to Scan Engine.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Synchronize to Scan Engine.vi"/>
-				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="control module configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/configuration/control module configuration.lvclass"/>
 				<Item Name="control module runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/runtime/control module runtime.lvclass"/>
-				<Item Name="CVT runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/CVT Access/execution/CVT runtime.lvclass"/>
-				<Item Name="CVT configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/CVT Access/configuration/CVT configuration.lvclass"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
 				<Item Name="Semaphore RefNum" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore RefNum"/>
@@ -2633,22 +2614,6 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
-				<Item Name="SEH Error Display Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Error Display Options.ctl"/>
-				<Item Name="SEH Error Processor.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Support VIs/SEH/SEH Error Processor.vi"/>
-				<Item Name="Classify Error.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Classify Error.vi"/>
-				<Item Name="SEH Error Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Error Options.ctl"/>
-				<Item Name="SEH Shared Error Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Shared Error Options.ctl"/>
-				<Item Name="SEH Error Notification Command.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/Shared/SEH Error Notification Command.ctl"/>
-				<Item Name="SEH Execute Error Handling Code.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Support VIs/SEH/SEH Execute Error Handling Code.vi"/>
-				<Item Name="SEH Error Notification.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Support VIs/SEH/SEH Error Notification.vi"/>
-				<Item Name="SEH Error Notification Config.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/Shared/SEH Error Notification Config.ctl"/>
-				<Item Name="SEH Error Notification Data.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Error Notification Data.ctl"/>
-				<Item Name="SEH Transmit Error Function.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/Shared/SEH Transmit Error Function.ctl"/>
-				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
-				<Item Name="SEH Get Next Error.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/SEH Get Next Error.vi"/>
-				<Item Name="SEH Init.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/SEH Init.vi"/>
-				<Item Name="De-Classify Error.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/De-Classify Error.vi"/>
-				<Item Name="SEH Notification Info.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/Shared/SEH Notification Info.ctl"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
@@ -2670,35 +2635,73 @@ AddOutputFilter chunkFilter
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
 				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
 				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
+				<Item Name="WaveformTask.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/PowerElectronicsControl/WaveformAcq/RT/WaveformTask.lvclass"/>
+				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
+				<Item Name="Standard Engine Runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/Runtime/Standard Engine Runtime.lvclass"/>
+				<Item Name="worker pool.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/worker library/worker pool.lvlib"/>
+				<Item Name="main engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/main engine/main engine.lvlib"/>
+				<Item Name="Standard Engine Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/Configuration/Standard Engine Configuration.lvclass"/>
+				<Item Name="usec timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/usec timing source/usec timing source.lvclass"/>
+				<Item Name="scan engine timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/scan engine timing source/scan engine timing source.lvclass"/>
+				<Item Name="Set Scan Engine Period.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Set Scan Engine Period.vi"/>
+				<Item Name="IOV engine refnum from target address.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/IOV engine refnum from target address.vi"/>
+				<Item Name="Set Scan Engine Mode.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Set Scan Engine Mode.vi"/>
+				<Item Name="Synchronize to Scan Engine.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Synchronize to Scan Engine.vi"/>
+				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
+				<Item Name="CVT runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/CVT Access/execution/CVT runtime.lvclass"/>
+				<Item Name="CVT configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/CVT Access/configuration/CVT configuration.lvclass"/>
+				<Item Name="ScaleAndLimitInterface.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/PowerElectronicsControl/ScaleAndLimit/Interface/ScaleAndLimitInterface.lvlib"/>
+				<Item Name="LED configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/LED/module/configuration/LED configuration.lvclass"/>
+				<Item Name="LED runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/LED/module/execution/LED runtime.lvclass"/>
+				<Item Name="CentralErrorHandler configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/CentralErrorHandler/configuration/CentralErrorHandler configuration.lvclass"/>
+				<Item Name="CentralErrorHandler runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/CentralErrorHandler/execution/CentralErrorHandler runtime.lvclass"/>
+				<Item Name="RTResourceUtilitzation configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/RTResourceUtilization/configuration/RTResourceUtilitzation configuration.lvclass"/>
+				<Item Name="RTResourceUtilitzation runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/RTResourceUtilization/execution/RTResourceUtilitzation runtime.lvclass"/>
+				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
+				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
+				<Item Name="InstructionFrameworkFGV.vi" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/InstructionFrameworkFGV.vi"/>
+				<Item Name="FPGA_FGV_action.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/FPGA_FGV_action.ctl"/>
+			</Item>
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="SEH Error Options.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Error Options.ctl"/>
+				<Item Name="SEH Shared Error Options.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Shared Error Options.ctl"/>
+				<Item Name="SEH Error Display Options.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Error Display Options.ctl"/>
+				<Item Name="SEH Error Processor.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Support VIs/SEH/SEH Error Processor.vi"/>
+				<Item Name="SEH Error Notification Command.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Error Notification Command.ctl"/>
+				<Item Name="Classify Error.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Classify Error.vi"/>
+				<Item Name="SEH Error Notification.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Support VIs/SEH/SEH Error Notification.vi"/>
+				<Item Name="SEH Error Notification Config.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Error Notification Config.ctl"/>
+				<Item Name="SEH Error Notification Data.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Error Notification Data.ctl"/>
+				<Item Name="SEH Transmit Error Function.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Transmit Error Function.ctl"/>
+				<Item Name="SEH Execute Error Handling Code.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Support VIs/SEH/SEH Execute Error Handling Code.vi"/>
+				<Item Name="SEH Notification Info.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Notification Info.ctl"/>
+				<Item Name="SEH Get Next Error.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/SEH Get Next Error.vi"/>
+				<Item Name="SEH Init.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/SEH Init.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="niifwu.dll" Type="Document" URL="/&lt;resource&gt;/niifwu.dll"/>
-			<Item Name="GPIC Core runtime.lvclass" Type="LVClass" URL="../../../GPICcoreModule/module/execution/GPIC Core runtime.lvclass"/>
-			<Item Name="GPIC Core configuration.lvclass" Type="LVClass" URL="../../../GPICcoreModule/module/configuration/GPIC Core configuration.lvclass"/>
-			<Item Name="ScaleAndLimitModule runtime.lvclass" Type="LVClass" URL="../../../ScaleAndLimitModule/module/execution/ScaleAndLimitModule runtime.lvclass"/>
-			<Item Name="ScaleAndLimitModule configuration.lvclass" Type="LVClass" URL="../../../ScaleAndLimitModule/module/configuration/ScaleAndLimitModule configuration.lvclass"/>
-			<Item Name="WaveformAcq runtime.lvclass" Type="LVClass" URL="../../../WaveformAcqModule/module/execution/WaveformAcq runtime.lvclass"/>
-			<Item Name="WaveformAcq configuration.lvclass" Type="LVClass" URL="../../../WaveformAcqModule/module/configuration/WaveformAcq configuration.lvclass"/>
-			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Central Error Handler runtime.lvclass" Type="LVClass" URL="../../../CentralErrorHandlerModule/module/execution/Central Error Handler runtime.lvclass"/>
-			<Item Name="Central Error Handler configuration.lvclass" Type="LVClass" URL="../../../CentralErrorHandlerModule/module/configuration/Central Error Handler configuration.lvclass"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="RT Resource Usage runtime.lvclass" Type="LVClass" URL="../../../RT_ResourceUsageModule/module/execution/RT Resource Usage runtime.lvclass"/>
-			<Item Name="RT Resource Usage configuration.lvclass" Type="LVClass" URL="../../../RT_ResourceUsageModule/module/configuration/RT Resource Usage configuration.lvclass"/>
-			<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
-			<Item Name="AppStateMachine configuration.lvclass" Type="LVClass" URL="../Controller/AppStateMachine/module/configuration/AppStateMachine configuration.lvclass"/>
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="BaseApplication_FPGATarget_Firmware_UcBh6Emi2ng.lvbitx" Type="Document" URL="../Controller/FPGA/Bitfiles/BaseApplication_FPGATarget_Firmware_UcBh6Emi2ng.lvbitx"/>
+			<Item Name="WaveformAcq runtime.lvclass" Type="LVClass" URL="../../../FPGAWaverform/dev/module/execution/WaveformAcq runtime.lvclass"/>
+			<Item Name="WaveformAcq configuration.lvclass" Type="LVClass" URL="../../../FPGAWaverform/dev/module/configuration/WaveformAcq configuration.lvclass"/>
+			<Item Name="GPIC Core runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/GPIC_Core/module/execution/GPIC Core runtime.lvclass"/>
+			<Item Name="ScaleAndLimitModule runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/ScaleAndLimit/module/execution/ScaleAndLimitModule runtime.lvclass"/>
+			<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
+			<Item Name="GPIC Core configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/GPIC_Core/module/configuration/GPIC Core configuration.lvclass"/>
+			<Item Name="ScaleAndLimitModule configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/ScaleAndLimit/module/configuration/ScaleAndLimitModule configuration.lvclass"/>
+			<Item Name="AppStateMachine configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/configuration/AppStateMachine configuration.lvclass"/>
+			<Item Name="AvalableLogFiles.vi" Type="VI" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AvalableLogFiles.vi"/>
+			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="AvalableLogFiles.vi" Type="VI" URL="../Controller/AppStateMachine/module/execution/AvalableLogFiles.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -2721,10 +2724,10 @@ AddOutputFilter chunkFilter
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="AppStateMachine" Type="Folder">
-			<Item Name="AppStateMachine configuration.lvclass" Type="LVClass" URL="../Controller/AppStateMachine/module/configuration/AppStateMachine configuration.lvclass"/>
-			<Item Name="AppStateMachine editor node.lvclass" Type="LVClass" URL="../Controller/AppStateMachine/editor node/AppStateMachine editor node.lvclass"/>
-			<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
-			<Item Name="AppStateMachine tests.lvlib" Type="Library" URL="../Controller/AppStateMachine/Test/AppStateMachine tests.lvlib"/>
+			<Item Name="AppStateMachine configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/configuration/AppStateMachine configuration.lvclass"/>
+			<Item Name="AppStateMachine editor node.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/editor node/AppStateMachine editor node.lvclass"/>
+			<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
+			<Item Name="AppStateMachine tests.lvlib" Type="Library" URL="../Controller/DCAF_modules/AppStateMachine/Test/AppStateMachine tests.lvlib"/>
 		</Item>
 		<Item Name="Support" Type="Folder">
 			<Item Name="FormatWaveforms.vi" Type="VI" URL="../Client/Support/FormatWaveforms.vi"/>
@@ -2743,6 +2746,24 @@ AddOutputFilter chunkFilter
 				<Item Name="niInstr Instruction Framework Context v1 Host.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/_niInstr/Instruction Framework/v1/Host/Instruction Framework Context/niInstr Instruction Framework Context v1 Host.lvclass"/>
 				<Item Name="niInstr Instruction Target v1 Host.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/_niInstr/Instruction Framework/v1/Host/Instruction Target/niInstr Instruction Target v1 Host.lvclass"/>
 			</Item>
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="CEH Actions.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/CEH/CEH Actions.ctl"/>
+				<Item Name="Classify Error.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Classify Error.vi"/>
+				<Item Name="De-Classify Error.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/De-Classify Error.vi"/>
+				<Item Name="SEH Error Display Options.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Error Display Options.ctl"/>
+				<Item Name="SEH Error Notification Command.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Error Notification Command.ctl"/>
+				<Item Name="SEH Error Notification Config.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Error Notification Config.ctl"/>
+				<Item Name="SEH Error Notification Data.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Error Notification Data.ctl"/>
+				<Item Name="SEH Error Notification.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Support VIs/SEH/SEH Error Notification.vi"/>
+				<Item Name="SEH Error Options.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Error Options.ctl"/>
+				<Item Name="SEH Error Processor.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Support VIs/SEH/SEH Error Processor.vi"/>
+				<Item Name="SEH Execute Error Handling Code.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Support VIs/SEH/SEH Execute Error Handling Code.vi"/>
+				<Item Name="SEH Get Next Error.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/SEH Get Next Error.vi"/>
+				<Item Name="SEH Init.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/SEH Init.vi"/>
+				<Item Name="SEH Notification Info.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Notification Info.ctl"/>
+				<Item Name="SEH Shared Error Options.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/SEH/SEH Shared Error Options.ctl"/>
+				<Item Name="SEH Transmit Error Function.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/Shared/SEH Transmit Error Function.ctl"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AMC.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/AMC/AMC.lvlib"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -2753,7 +2774,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="class discovery singleton.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Configuration Framework/class discovery singleton/class discovery singleton.lvlib"/>
-				<Item Name="Classify Error.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Classify Error.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Clear-68016.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/Clear-68016.vi"/>
 				<Item Name="ClearError.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/ClearError.vi"/>
@@ -2784,6 +2804,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="formatPropertyList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/formatPropertyList.vi"/>
 				<Item Name="FPGA manager.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/FPGA manager/FPGA manager.lvlib"/>
+				<Item Name="FPGA_FGV_action.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/FPGA_FGV_action.ctl"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
@@ -2809,6 +2830,7 @@ AddOutputFilter chunkFilter
 				<Item Name="initHelpButtonVisibility.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initHelpButtonVisibility.vi"/>
 				<Item Name="InitScrollbarAndListBox.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/InitScrollbarAndListBox.vi"/>
 				<Item Name="initTabValues.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initTabValues.vi"/>
+				<Item Name="InstructionFrameworkFGV.vi" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/InstructionFrameworkFGV.vi"/>
 				<Item Name="JSONable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/JSONable/JSONable.lvclass"/>
 				<Item Name="JSONRPC Server.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/Server/JSONRPC Server.lvclass"/>
 				<Item Name="LabVIEWHTTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/httpClient/LabVIEWHTTPClient.lvlib"/>
@@ -2861,16 +2883,6 @@ AddOutputFilter chunkFilter
 				<Item Name="result.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/New folder/result.lvclass"/>
 				<Item Name="Robust CSV.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/Robust CSV/Robust CSV.lvlib"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
-				<Item Name="SEH Error Display Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Error Display Options.ctl"/>
-				<Item Name="SEH Error Notification Command.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/Shared/SEH Error Notification Command.ctl"/>
-				<Item Name="SEH Error Notification Config.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/Shared/SEH Error Notification Config.ctl"/>
-				<Item Name="SEH Error Notification Data.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Error Notification Data.ctl"/>
-				<Item Name="SEH Error Notification.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Support VIs/SEH/SEH Error Notification.vi"/>
-				<Item Name="SEH Error Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Error Options.ctl"/>
-				<Item Name="SEH Error Processor.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Support VIs/SEH/SEH Error Processor.vi"/>
-				<Item Name="SEH Execute Error Handling Code.vi" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Support VIs/SEH/SEH Execute Error Handling Code.vi"/>
-				<Item Name="SEH Shared Error Options.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/SEH/SEH Shared Error Options.ctl"/>
-				<Item Name="SEH Transmit Error Function.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/SEH/Controls/Shared/SEH Transmit Error Function.ctl"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
 				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
@@ -2909,9 +2921,7 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="write syslog.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Syslog Wrapper - Linux/write syslog.vi"/>
 			</Item>
-			<Item Name="AvalableLogFiles.vi" Type="VI" URL="../Controller/AppStateMachine/module/execution/AvalableLogFiles.vi"/>
-			<Item Name="FPGA_FGV.vi" Type="VI" URL="../Controller/FPGA_FGV.vi"/>
-			<Item Name="FPGA_FGV_action.ctl" Type="VI" URL="../Controller/FPGA_FGV_action.ctl"/>
+			<Item Name="AvalableLogFiles.vi" Type="VI" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AvalableLogFiles.vi"/>
 			<Item Name="FPGAtypedef.ctl" Type="VI" URL="../Controller/FPGA/FPGAtypedef.ctl"/>
 			<Item Name="methods.ctl" Type="VI" URL="../Controller/Support/methods.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
