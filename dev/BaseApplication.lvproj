@@ -2635,7 +2635,6 @@ AddOutputFilter chunkFilter
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
 				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
 				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
-				<Item Name="WaveformTask.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/PowerElectronicsControl/WaveformAcq/RT/WaveformTask.lvclass"/>
 				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
 				<Item Name="Standard Engine Runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/Runtime/Standard Engine Runtime.lvclass"/>
 				<Item Name="worker pool.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Engines/Standard Engine/Execution Engine/worker library/worker pool.lvlib"/>
@@ -2687,8 +2686,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="BaseApplication_FPGATarget_Firmware_UcBh6Emi2ng.lvbitx" Type="Document" URL="../Controller/FPGA/Bitfiles/BaseApplication_FPGATarget_Firmware_UcBh6Emi2ng.lvbitx"/>
-			<Item Name="WaveformAcq runtime.lvclass" Type="LVClass" URL="../../../FPGAWaverform/dev/module/execution/WaveformAcq runtime.lvclass"/>
-			<Item Name="WaveformAcq configuration.lvclass" Type="LVClass" URL="../../../FPGAWaverform/dev/module/configuration/WaveformAcq configuration.lvclass"/>
 			<Item Name="GPIC Core runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/GPIC_Core/module/execution/GPIC Core runtime.lvclass"/>
 			<Item Name="ScaleAndLimitModule runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/ScaleAndLimit/module/execution/ScaleAndLimitModule runtime.lvclass"/>
 			<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
@@ -2702,6 +2699,9 @@ AddOutputFilter chunkFilter
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Export.ctl" Type="VI" URL="../../../FPGAWaverform/dev/module/execution/Export.ctl"/>
+			<Item Name="ExportConfiguration.vi" Type="VI" URL="../../../FPGAWaverform/dev/module/execution/ExportConfiguration.vi"/>
+			<Item Name="WaveformAcq runtime.lvclass" Type="LVClass" URL="../../../FPGAWaverform/dev/module/execution/WaveformAcq runtime.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
