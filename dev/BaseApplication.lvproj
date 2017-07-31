@@ -81,6 +81,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Support" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="globals.vi" Type="VI" URL="../Controller/Support/globals.vi"/>
 			<Item Name="StreamState.ctl" Type="VI" URL="../Controller/Support/StreamState.ctl"/>
 			<Item Name="LoggingProcess.vi" Type="VI" URL="../Controller/Support/LoggingProcess.vi"/>
@@ -88,6 +89,44 @@ AddOutputFilter chunkFilter
 			<Item Name="StreamHeader.ctl" Type="VI" URL="../Controller/Support/StreamHeader.ctl"/>
 			<Item Name="FormatGraph.vi" Type="VI" URL="../Controller/Support/FormatGraph.vi"/>
 		</Item>
+		<Item Name="Main.vi" Type="VI" URL="../Controller/Main.vi"/>
+		<Item Name="Host Module Includes.vi" Type="VI" URL="../Controller/Host Module Includes.vi"/>
+		<Item Name="jsonRPC" Type="Web Service">
+			<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
+			<Property Name="ws.disconnectInline" Type="Bool">true</Property>
+			<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
+			<Property Name="ws.guid" Type="Str">{D9EFBC22-BE18-4494-8E64-E6F704652467}</Property>
+			<Property Name="ws.modifyLibraryFile" Type="Bool">true</Property>
+			<Property Name="ws.remoteDebugging" Type="Bool">false</Property>
+			<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
+			<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
+			<Property Name="ws.serveDefaultDoc" Type="Bool">true</Property>
+			<Property Name="ws.SSE2" Type="Bool">true</Property>
+			<Property Name="ws.static_permissions" Type="Str"></Property>
+			<Property Name="ws.version.build" Type="Int">0</Property>
+			<Property Name="ws.version.fix" Type="Int">0</Property>
+			<Property Name="ws.version.major" Type="Int">1</Property>
+			<Property Name="ws.version.minor" Type="Int">0</Property>
+			<Item Name="Startup VIs" Type="Startup VIs Container"/>
+			<Item Name="Web Resources" Type="HTTP WebResources Container">
+				<Item Name="request.vi" Type="VI" URL="../Client/jsonRPCwebservice/request.vi">
+					<Property Name="ws.buffered" Type="Bool">true</Property>
+					<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+					<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+					<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+					<Property Name="ws.method" Type="Int">3</Property>
+					<Property Name="ws.outputFormat" Type="Int">2</Property>
+					<Property Name="ws.outputType" Type="Int">1</Property>
+					<Property Name="ws.permissions" Type="Str"></Property>
+					<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
+					<Property Name="ws.type" Type="Int">1</Property>
+					<Property Name="ws.uri" Type="Str"></Property>
+					<Property Name="ws.useHeaders" Type="Bool">true</Property>
+					<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+				</Item>
+			</Item>
+		</Item>
+		<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
 		<Item Name="Chassis" Type="sbRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
@@ -2496,45 +2535,6 @@ AddOutputFilter chunkFilter
 				<Property Name="crio.ModuleContainerType" Type="Str">crio.RSIModuleContainer</Property>
 			</Item>
 		</Item>
-		<Item Name="jsonRPC" Type="Web Service">
-			<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
-			<Property Name="ws.disconnectInline" Type="Bool">true</Property>
-			<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
-			<Property Name="ws.guid" Type="Str">{D9EFBC22-BE18-4494-8E64-E6F704652467}</Property>
-			<Property Name="ws.modifyLibraryFile" Type="Bool">true</Property>
-			<Property Name="ws.remoteDebugging" Type="Bool">false</Property>
-			<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
-			<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
-			<Property Name="ws.serveDefaultDoc" Type="Bool">true</Property>
-			<Property Name="ws.SSE2" Type="Bool">true</Property>
-			<Property Name="ws.static_permissions" Type="Str"></Property>
-			<Property Name="ws.version.build" Type="Int">0</Property>
-			<Property Name="ws.version.fix" Type="Int">0</Property>
-			<Property Name="ws.version.major" Type="Int">1</Property>
-			<Property Name="ws.version.minor" Type="Int">0</Property>
-			<Item Name="Startup VIs" Type="Startup VIs Container"/>
-			<Item Name="Web Resources" Type="HTTP WebResources Container">
-				<Item Name="request.vi" Type="VI" URL="../Client/jsonRPCwebservice/request.vi">
-					<Property Name="ws.buffered" Type="Bool">true</Property>
-					<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
-					<Property Name="ws.keepInMemory" Type="Bool">true</Property>
-					<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
-					<Property Name="ws.method" Type="Int">3</Property>
-					<Property Name="ws.outputFormat" Type="Int">2</Property>
-					<Property Name="ws.outputType" Type="Int">1</Property>
-					<Property Name="ws.permissions" Type="Str"></Property>
-					<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
-					<Property Name="ws.type" Type="Int">1</Property>
-					<Property Name="ws.uri" Type="Str"></Property>
-					<Property Name="ws.useHeaders" Type="Bool">true</Property>
-					<Property Name="ws.useStandardURL" Type="Bool">true</Property>
-				</Item>
-			</Item>
-		</Item>
-		<Item Name="Main.vi" Type="VI" URL="../Controller/Main.vi"/>
-		<Item Name="Host Module Includes.vi" Type="VI" URL="../Controller/Host Module Includes.vi"/>
-		<Item Name="methods.ctl" Type="VI" URL="../Controller/Support/methods.ctl"/>
-		<Item Name="FPGAtypedef.ctl" Type="VI" URL="../Controller/FPGA/FPGAtypedef.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niInstr FIFO Register Bus v1 Host.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/_niInstr/FIFO Register Bus/v1/Host/niInstr FIFO Register Bus v1 Host.lvclass"/>
@@ -2659,6 +2659,9 @@ AddOutputFilter chunkFilter
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
 				<Item Name="InstructionFrameworkFGV.vi" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/InstructionFrameworkFGV.vi"/>
+				<Item Name="WaveformAcq runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/FPGAWaveform/execution/WaveformAcq runtime.lvclass"/>
+				<Item Name="WaveformTask.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/PowerElectronicsControl/WaveformAcq/RT/WaveformTask.lvclass"/>
+				<Item Name="WaveformAcq configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Modules/FPGAWaveform/configuration/WaveformAcq configuration.lvclass"/>
 				<Item Name="FPGA_FGV_action.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/FPGA_FGV_action.ctl"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
@@ -2688,20 +2691,15 @@ AddOutputFilter chunkFilter
 			<Item Name="BaseApplication_FPGATarget_Firmware_UcBh6Emi2ng.lvbitx" Type="Document" URL="../Controller/FPGA/Bitfiles/BaseApplication_FPGATarget_Firmware_UcBh6Emi2ng.lvbitx"/>
 			<Item Name="GPIC Core runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/GPIC_Core/module/execution/GPIC Core runtime.lvclass"/>
 			<Item Name="ScaleAndLimitModule runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/ScaleAndLimit/module/execution/ScaleAndLimitModule runtime.lvclass"/>
-			<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
 			<Item Name="GPIC Core configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/GPIC_Core/module/configuration/GPIC Core configuration.lvclass"/>
 			<Item Name="ScaleAndLimitModule configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/ScaleAndLimit/module/configuration/ScaleAndLimitModule configuration.lvclass"/>
 			<Item Name="AppStateMachine configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/configuration/AppStateMachine configuration.lvclass"/>
-			<Item Name="AvalableLogFiles.vi" Type="VI" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AvalableLogFiles.vi"/>
 			<Item Name="lvalarms.dll" Type="Document" URL="lvalarms.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Export.ctl" Type="VI" URL="../../../FPGAWaverform/dev/module/execution/Export.ctl"/>
-			<Item Name="ExportConfiguration.vi" Type="VI" URL="../../../FPGAWaverform/dev/module/execution/ExportConfiguration.vi"/>
-			<Item Name="WaveformAcq runtime.lvclass" Type="LVClass" URL="../../../FPGAWaverform/dev/module/execution/WaveformAcq runtime.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -2714,6 +2712,7 @@ AddOutputFilter chunkFilter
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -2723,29 +2722,21 @@ AddOutputFilter chunkFilter
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="AppStateMachine" Type="Folder">
-			<Item Name="AppStateMachine configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/configuration/AppStateMachine configuration.lvclass"/>
-			<Item Name="AppStateMachine editor node.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/editor node/AppStateMachine editor node.lvclass"/>
-			<Item Name="AppStateMachine runtime.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AppStateMachine runtime.lvclass"/>
-			<Item Name="AppStateMachine tests.lvlib" Type="Library" URL="../Controller/DCAF_modules/AppStateMachine/Test/AppStateMachine tests.lvlib"/>
-		</Item>
 		<Item Name="Support" Type="Folder">
+			<Item Name="client_globals.vi" Type="VI" URL="../Client/Support/client_globals.vi"/>
 			<Item Name="FormatWaveforms.vi" Type="VI" URL="../Client/Support/FormatWaveforms.vi"/>
-			<Item Name="globals.vi" Type="VI" URL="../Client/Support/globals.vi"/>
 			<Item Name="msg.ctl" Type="VI" URL="../Client/Support/msg.ctl"/>
 			<Item Name="RequestAndTrace.vi" Type="VI" URL="../Client/Support/RequestAndTrace.vi"/>
 			<Item Name="StreamClientState.ctl" Type="VI" URL="../Client/Support/StreamClientState.ctl"/>
 			<Item Name="ToTrace.vi" Type="VI" URL="../Client/Support/ToTrace.vi"/>
 		</Item>
 		<Item Name="ExampleClient.vi" Type="VI" URL="../Client/ExampleClient.vi"/>
+		<Item Name="Base.pcfg" Type="Document" URL="../Base.pcfg"/>
+		<Item Name="AppStateMachine editor node.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/editor node/AppStateMachine editor node.lvclass"/>
+		<Item Name="AppStateMachine configuration.lvclass" Type="LVClass" URL="../Controller/DCAF_modules/AppStateMachine/module/configuration/AppStateMachine configuration.lvclass"/>
 		<Item Name="JSON_RPC_client.lvlib" Type="Library" URL="../Client/jsonRPCwebservice/client/JSON_RPC_client.lvlib"/>
 		<Item Name="TDMS - File Viewer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS - File Viewer.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="instr.lib" Type="Folder">
-				<Item Name="niInstr FIFO Register Bus v1 Host.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/_niInstr/FIFO Register Bus/v1/Host/niInstr FIFO Register Bus v1 Host.lvclass"/>
-				<Item Name="niInstr Instruction Framework Context v1 Host.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/_niInstr/Instruction Framework/v1/Host/Instruction Framework Context/niInstr Instruction Framework Context v1 Host.lvclass"/>
-				<Item Name="niInstr Instruction Target v1 Host.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/_niInstr/Instruction Framework/v1/Host/Instruction Target/niInstr Instruction Target v1 Host.lvclass"/>
-			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="CEH Actions.ctl" Type="VI" URL="/&lt;userlib&gt;/_SEH/Controls/CEH/CEH Actions.ctl"/>
 				<Item Name="Classify Error.vi" Type="VI" URL="/&lt;userlib&gt;/_SEH/Classify Error.vi"/>
@@ -2766,7 +2757,6 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AMC.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/AMC/AMC.lvlib"/>
-				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="AsciiToInt.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/AsciiToInt.vi"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -2780,7 +2770,6 @@ AddOutputFilter chunkFilter
 				<Item Name="configureNumberOfValues.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/configureNumberOfValues.vi"/>
 				<Item Name="control module configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/configuration/control module configuration.lvclass"/>
 				<Item Name="control module editor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/editor node/control module editor.lvclass"/>
-				<Item Name="control module runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/runtime/control module runtime.lvclass"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="DCAF UI Elements.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF UI Toolkit/Controls/DCAF UI Elements.lvlib"/>
@@ -2792,7 +2781,6 @@ AddOutputFilter chunkFilter
 				<Item Name="engine configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Execution Interface/Engine Configuration/engine configuration.lvclass"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
-				<Item Name="error.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/error/error.lvclass"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="Escape Characters for HTTP.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Escape Characters for HTTP.vi"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
@@ -2803,8 +2791,6 @@ AddOutputFilter chunkFilter
 				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="formatPropertyList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/formatPropertyList.vi"/>
-				<Item Name="FPGA manager.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/FPGA manager/FPGA manager.lvlib"/>
-				<Item Name="FPGA_FGV_action.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/FPGA_FGV_action.ctl"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
@@ -2823,16 +2809,12 @@ AddOutputFilter chunkFilter
 				<Item Name="GoTo.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/GoTo.vi"/>
 				<Item Name="GraphViz Mapping Visualizer.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/Utilities/GraphViz Vizualizations/GraphViz Mapping Visualizer.lvlib"/>
 				<Item Name="i3-json.lvlib" Type="Library" URL="/&lt;vilib&gt;/LVH/i3 JSON/i3-json.lvlib"/>
-				<Item Name="id.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/id/id.lvclass"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="initFileContentsTree.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initFileContentsTree.vi"/>
 				<Item Name="InitFromConfiguration.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/InitFromConfiguration.vi"/>
 				<Item Name="initHelpButtonVisibility.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initHelpButtonVisibility.vi"/>
 				<Item Name="InitScrollbarAndListBox.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/InitScrollbarAndListBox.vi"/>
 				<Item Name="initTabValues.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/initTabValues.vi"/>
-				<Item Name="InstructionFrameworkFGV.vi" Type="VI" URL="/&lt;vilib&gt;/NI/DCAF/addons/InstructionFrameworkSupport/InstructionFrameworkFGV.vi"/>
-				<Item Name="JSONable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/JSONable/JSONable.lvclass"/>
-				<Item Name="JSONRPC Server.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/Server/JSONRPC Server.lvclass"/>
 				<Item Name="LabVIEWHTTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/httpClient/LabVIEWHTTPClient.lvlib"/>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi"/>
 				<Item Name="loadAndFormatValues.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/loadAndFormatValues.vi"/>
@@ -2868,7 +2850,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Open URL in Default Browser.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser.vi"/>
 				<Item Name="panelResize_tdms.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/panelResize_tdms.vi"/>
 				<Item Name="panelstate.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/panelstate.ctl"/>
-				<Item Name="params.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/params/params.lvclass"/>
 				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
 				<Item Name="Path to URL.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL.vi"/>
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
@@ -2878,9 +2859,6 @@ AddOutputFilter chunkFilter
 				<Item Name="PL_Target Configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/Framework Configuration Classes/target configuration/PL_Target Configuration.lvclass"/>
 				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
-				<Item Name="Request.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/Request/Request.lvclass"/>
-				<Item Name="Response.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/Response/Response.lvclass"/>
-				<Item Name="result.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/NI JSONRPC Server Framework/Classes/New folder/result.lvclass"/>
 				<Item Name="Robust CSV.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/Robust CSV/Robust CSV.lvlib"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
@@ -2921,13 +2899,6 @@ AddOutputFilter chunkFilter
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="write syslog.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Syslog Wrapper - Linux/write syslog.vi"/>
 			</Item>
-			<Item Name="AvalableLogFiles.vi" Type="VI" URL="../Controller/DCAF_modules/AppStateMachine/module/execution/AvalableLogFiles.vi"/>
-			<Item Name="FPGAtypedef.ctl" Type="VI" URL="../Controller/FPGA/FPGAtypedef.ctl"/>
-			<Item Name="methods.ctl" Type="VI" URL="../Controller/Support/methods.ctl"/>
-			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="niifwu.dll" Type="Document" URL="/&lt;resource&gt;/niifwu.dll"/>
 			<Item Name="StreamHeader.ctl" Type="VI" URL="../Controller/Support/StreamHeader.ctl"/>
 			<Item Name="System.Drawing" Type="Document" URL="System.Drawing">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>

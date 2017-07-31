@@ -1,8 +1,8 @@
 <MetaData>
 <ProjectTemplate>
-  <Title localize="yes">Poewr Electronics COntrol Base Application</Title>
+  <Title localize="yes">Power Electronics Control Base Application</Title>
   <Description localize="yes">Template RT Host and FPGA VIs for Power Electronics Control on the sbRIO-9607/GPIC platform</Description>
-  <Filters localize="yes">Sample Projects:Power Electronics Control</Filters>
+  <Filters localize="yes">Power Electronics Control:Base Application</Filters>
   <Keywords localize="yes">sbRIO;Power;FPGA;RT;Control;</Keywords>
   <LocationPath>PowerElectronicsControl/BaseApplication</LocationPath>
   <ProjectPath>BaseApplication.lvproj</ProjectPath>>

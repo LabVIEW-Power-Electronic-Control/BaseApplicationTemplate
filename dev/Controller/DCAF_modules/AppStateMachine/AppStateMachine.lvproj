@@ -174,12 +174,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="niifwu.dll" Type="Document" URL="/&lt;resource&gt;/niifwu.dll"/>
-			<Item Name="methods.ctl" Type="VI" URL="../../../Support/methods.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="FPGAtypedef.ctl" Type="VI" URL="../../../FPGA/FPGAtypedef.ctl"/>
-			<Item Name="AvalableLogFiles.vi" Type="VI" URL="../module/execution/AvalableLogFiles.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
