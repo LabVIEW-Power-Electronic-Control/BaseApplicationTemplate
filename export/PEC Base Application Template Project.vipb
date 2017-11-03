@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2017" Created_Date="2017-07-28 12:50:43" Modified_Date="2017-11-03 12:43:21" Creator="test" Comments="" ID="9a2527400cce06ef042136844df4030f">
+<VI_Package_Builder_Settings Version="2017" Created_Date="2017-07-28 12:50:43" Modified_Date="2017-11-03 13:16:30" Creator="test" Comments="" ID="f69b2c772bcf035ffd9db94083bec87e">
   <Library_General_Settings>
     <Package_File_Name>PEC_Base_Application_Template_Project</Package_File_Name>
-    <Library_Version>1.0.0.7</Library_Version>
+    <Library_Version>1.0.0.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\dev</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>

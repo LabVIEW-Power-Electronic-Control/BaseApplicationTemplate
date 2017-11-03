@@ -1,9 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="17008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
-	<Item Name="sbRIO9607-GPIC" Type="RT Single-Board RIO">
-		<Property Name="alias.name" Type="Str">sbRIO9607-GPIC</Property>
-		<Property Name="alias.value" Type="Str">10.1.129.22</Property>
+	<Item Name="sbRIO9607" Type="RT Single-Board RIO">
+		<Property Name="alias.name" Type="Str">sbRIO9607</Property>
+		<Property Name="alias.value" Type="Str">0.0.0.0</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,77D6;TRACE,ON;WATCHDOG,DISABLE;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">77D6</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
@@ -2538,7 +2538,7 @@ AddOutputFilter chunkFilter
 						<Property Name="SupportDownload" Type="Bool">true</Property>
 						<Property Name="SupportResourceEstimation" Type="Bool">false</Property>
 						<Property Name="TargetName" Type="Str">FPGA Target</Property>
-						<Property Name="TopLevelVI" Type="Ref">/sbRIO9607-GPIC/Chassis/FPGA Target/Firmware.vi</Property>
+						<Property Name="TopLevelVI" Type="Ref">/sbRIO9607/Chassis/FPGA Target/Firmware.vi</Property>
 					</Item>
 				</Item>
 			</Item>
