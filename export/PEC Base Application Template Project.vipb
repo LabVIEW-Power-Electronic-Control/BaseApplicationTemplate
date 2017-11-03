@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2017" Created_Date="2017-07-28 12:50:43" Modified_Date="2017-07-31 08:30:55" Creator="test" Comments="" ID="c5d3f1f6232d961758e407900fdceb5d">
+<VI_Package_Builder_Settings Version="2017" Created_Date="2017-07-28 12:50:43" Modified_Date="2017-10-30 11:34:57" Creator="test" Comments="" ID="7c94b74fec97904bf3aac07a31669888">
   <Library_General_Settings>
-    <Package_File_Name>ni_PEC_Base_Application_Template_Project</Package_File_Name>
-    <Library_Version>1.0.0.3</Library_Version>
+    <Package_File_Name>PEC_Base_Application_Template_Project</Package_File_Name>
+    <Library_Version>1.0.0.6</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\dev</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -17,17 +17,17 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>i3_json &gt;=1.0.0.10</Additional_External_Dependencies>
-      <Additional_External_Dependencies>lvpec_lib_buffer_logging &gt;=1.0.1.10</Additional_External_Dependencies>
-      <Additional_External_Dependencies>lvpec_lib_waveform_acquisition &gt;=1.0.0.5</Additional_External_Dependencies>
-      <Additional_External_Dependencies>lvpecc_lib_scale_and_limit &gt;=1.0.0.5</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_frmwk_dcaf_core &gt;=1.2.0.4</Additional_External_Dependencies>
-      <Additional_External_Dependencies>ni_lib_dcaf_ceh &gt;=1.0.0.4</Additional_External_Dependencies>
+      <Additional_External_Dependencies>ni_lib_dcaf_ceh &gt;=1.0.0.2</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_lib_dcaf_cvt &gt;=2.4.0.3</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_lib_dcaf_instruction_framework_support &gt;=1.0.0.1</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_lib_dcaf_led &gt;=1.2.0.16</Additional_External_Dependencies>
-      <Additional_External_Dependencies>ni_lib_dcaf_rt_resource_utilization &gt;=1.0.0.4</Additional_External_Dependencies>
+      <Additional_External_Dependencies>ni_lib_dcaf_rt_resource_utilization &gt;=1.0.0.1</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_lib_jsonrpc &gt;=1.0.0.15</Additional_External_Dependencies>
+      <Additional_External_Dependencies>ni_lib_lvjson &gt;=1.0.0.56</Additional_External_Dependencies>
+      <Additional_External_Dependencies>pec_lib_buffer_logging &gt;=1.0.1.12</Additional_External_Dependencies>
+      <Additional_External_Dependencies>pec_lib_scale_and_limit &gt;=1.0.0.11</Additional_External_Dependencies>
+      <Additional_External_Dependencies>pec_lib_waveform_acquisition &gt;=1.0.0.6</Additional_External_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -131,6 +131,16 @@
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
+      <Password_Overrides>
+        <Path>.</Path>
+        <Password/>
+        <Locked_Only>false</Locked_Only>
+      </Password_Overrides>
+      <Namespace_Overrides>
+        <Path>.</Path>
+        <Namespace_Type>Prefix</Namespace_Type>
+        <Namespace/>
+      </Namespace_Overrides>
       <Compile_Exclusions>
         <Path>.</Path>
       </Compile_Exclusions>

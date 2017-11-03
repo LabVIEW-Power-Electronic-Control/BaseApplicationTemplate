@@ -14,7 +14,6 @@
 		<Item Name="Request_str_JSON.vi" Type="VI" URL="../Request_str_JSON.vi"/>
 		<Item Name="Request_str_str.vi" Type="VI" URL="../Request_str_str.vi"/>
 	</Item>
-	<Item Name="Add Unknown Type.vi" Type="VI" URL="../Add Unknown Type.vi"/>
 	<Item Name="Close.vi" Type="VI" URL="../Close.vi"/>
 	<Item Name="config.ctl" Type="VI" URL="../config.ctl"/>
 	<Item Name="Open.vi" Type="VI" URL="../Open.vi"/>
